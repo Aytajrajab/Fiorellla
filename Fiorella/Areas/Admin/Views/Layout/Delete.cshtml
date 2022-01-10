@@ -1,0 +1,19 @@
+﻿@Model Layout
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">@Model.Logo</h4>
+                    </div>
+                    <form method="post" asp-controller="Layout" asp-action="Delete">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                  </div>
+                </div>
+</div>

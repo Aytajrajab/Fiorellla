@@ -1,0 +1,27 @@
+﻿@model Layout
+
+<div class="row">
+    <div class="col-12">
+        <h1>New category</h1>
+        <form class="forms-sample" method="post" asp-controller="Layout" asp-action="Create">
+           <div class="form-group">
+               <label asp-for="Logo">Enter Name</label>
+               <input asp-for="Logo" placeholder="Enter Title">
+               <span class="text-danger" asp-validation-for="Logo"></span>
+           </div>
+           <div class="form-group">
+               <label asp-for="facebook_url">Enter Name</label>
+               <input asp-for="facebook_url" placeholder="Enter Facebook Url">
+               <span class="text-danger" asp-validation-for="facebook_url"></span>
+           </div>
+           <div class="form-group">
+               <label asp-for="twitter_url">Enter Name</label>
+               <input asp-for="twitter_url" placeholder="Enter Twitter Url">
+               <span class="text-danger" asp-validation-for="twitter_url"></span>
+           </div>
+           <div class="form-group">
+               <button type="submit" class="btn btn-primary">Submit</button>
+           </div>
+        </form>
+    </div>
+</div>
